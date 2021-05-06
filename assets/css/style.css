@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  width: 70%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.logo{
+  text-align: center;
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.logo img{
+  width: 250px;
+}
+
+.new-todo{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.new-todo h3{
+  color: red;
+  margin: 15px;
+}
+
+.new-todo input{
+  width: 250px;
+  padding: 5px;
+  margin-right: 10px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.new-todo button{
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todos-list{
+  background-color: #e5e9e9;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 30px;
+}
+
+.todos-list ul{
+  list-style: none;
+}
+
+.todos-list ul li{
+  cursor: pointer;
+  padding: 15px;
+  border-bottom: 1px solid grey;
+}
+
+.todos-list ul li:hover{
+  background-color: white;
+}
+
+.todos-list ul li:last-child{
+  border: none;
+}
+
+.todos-list ul li.checked{
+  color: lightgrey;
+  text-decoration: line-through;
+}
+
+.todos-list ul i{
+  float: right;
+  cursor: pointer;
+}
