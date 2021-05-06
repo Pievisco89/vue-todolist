@@ -13,7 +13,7 @@ const app = new Vue({
   data:{
     strLista: '',
     alertMessage: false,
-    removeElement: false,
+    removeElement: true,
     todos:[
       {
         todo: 'Seguire lezione Boolean',

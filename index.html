@@ -28,10 +28,11 @@
         <li
           v-for="(todo, index) in todos"
           :class="(todo.checked) ? 'checked' : null"
-          @click="todo.checked = !todo.checked"> 
+          @click="todo.checked = !todo.checked"
+        > 
           {{ todo.todo }}
           <i 
-            v-if="removeElement"
+            v-if="(todo.checked) ? removeElement : null" 
             @click.stop="removeTodo(index)"
             class="fas fa-times"></i>
         </li>
