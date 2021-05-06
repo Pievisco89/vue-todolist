@@ -32,7 +32,7 @@
 
 .new-todo input{
   width: 250px;
-  padding: 5px;
+  padding: 8px;
   margin-right: 10px;
   outline: none;
   border-radius: 5px;
@@ -40,13 +40,18 @@
 }
 
 .new-todo button{
-  padding: 5px;
+  padding: 8px;
   border-radius: 5px;
   cursor: pointer;
+  background-color: rgb(190, 183, 183);
+}
+
+.new-todo button:hover{
+  background-color: rgb(223, 217, 217);
 }
 
 .todos-list{
-  background-color: #f2fafa;
+  background-color: #dcfafa;
   border-radius: 10px;
   margin: 20px;
   padding: 30px;
@@ -59,7 +64,7 @@
 .todos-list ul li{
   cursor: pointer;
   padding: 15px;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid rgb(177, 173, 173);
 }
 
 .todos-list ul li:hover{
@@ -71,7 +76,7 @@
 }
 
 .todos-list ul li.checked{
-  color: rgb(168, 164, 164);
+  color: rgb(145, 138, 138);
   text-decoration: line-through;
 }
 

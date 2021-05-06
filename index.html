@@ -18,7 +18,7 @@
     </div>
 
     <div class="new-todo">
-      <h3 v-if="alertMessage">Attenzione: inserire più di due caratteri!</h3>
+      <h3 v-if="alertMessage">Attenzione: devi inserire più di due caratteri!</h3>
       <input v-model="strLista" @keyup.enter="addNewTodo" type="text" placeholder="Nuovo todo">
       <button @click="addNewTodo">Aggiungi</button>
     </div>
@@ -34,7 +34,9 @@
           <i 
             v-if="(todo.checked) ? removeElement : null" 
             @click.stop="removeTodo(index)"
-            class="fas fa-times"></i>
+            class="fas fa-times"
+          >
+          </i>
         </li>
       </ul>
 
